@@ -166,13 +166,12 @@
     }
 
     .scroll-cue {
-      position: absolute;
-      bottom: 36px; left: 50%;
-      transform: translateX(-50%);
-      display: flex; flex-direction: column; align-items: center; gap: 6px;
-      color: var(--muted); font-size: 0.85rem; font-weight: 500;
-      animation: fadeIn 1s ease-out 1.6s backwards;
+      margin-top: 2rem;
+      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      animation: fadeIn 1s ease-out 2.2s backwards;
     }
+    .cue-title { font-size: 1rem; font-weight: 600; color: var(--ink); letter-spacing: -0.2px; }
+    .cue-sub { font-size: 0.88rem; font-weight: 500; color: var(--muted); }
     .chevron {
       width: 14px; height: 14px;
       border-right: 2px solid var(--brand);
@@ -587,7 +586,8 @@
       </a>
     </div>
     <div class="scroll-cue">
-      <span>Swipe</span>
+      <span class="cue-title">See how Fork works</span>
+      <span class="cue-sub">Swipe down for a quick demo</span>
       <div class="chevron"></div>
     </div>
   </section>
